@@ -3,6 +3,7 @@ import cors from 'cors';
 import routesProducto from '../routes/producto.routes';
 import routesFullCalendar from '../routes/fullcalendar.routes';
 import routesMapa from '../routes/mapa.routes';
+import routesChart from '../routes/charts.routes';
 import db from '../db/connection';
 
 class Server {
@@ -36,6 +37,7 @@ class Server {
         this.app.use('/api/productos', routesProducto);
         this.app.use('/api/fullcalendar', routesFullCalendar);
         this.app.use('/api/map', routesMapa);
+        this.app.use('/api/chart', routesChart);
     }
 
     middlewares() {

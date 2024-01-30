@@ -17,6 +17,7 @@ const cors_1 = __importDefault(require("cors"));
 const producto_routes_1 = __importDefault(require("../routes/producto.routes"));
 const fullcalendar_routes_1 = __importDefault(require("../routes/fullcalendar.routes"));
 const mapa_routes_1 = __importDefault(require("../routes/mapa.routes"));
+const charts_routes_1 = __importDefault(require("../routes/charts.routes"));
 const connection_1 = __importDefault(require("../db/connection"));
 class Server {
     constructor() {
@@ -41,6 +42,7 @@ class Server {
         this.app.use('/api/productos', producto_routes_1.default);
         this.app.use('/api/fullcalendar', fullcalendar_routes_1.default);
         this.app.use('/api/map', mapa_routes_1.default);
+        this.app.use('/api/chart', charts_routes_1.default);
     }
     middlewares() {
         this.app.use(express_1.default.json());
