@@ -29,4 +29,5 @@ db: Esta carpeta contiene la configuración de la base de datos.
 🎉 Conclusión
 Esta aplicación backend es una herramienta poderosa para manipular y visualizar datos de varias tablas creadas con phpMyAdmin. Con su amplia gama de funcionalidades, es una excelente opción para cualquier proyecto que requiera una gestión de datos eficiente y efectiva.
 
-
+```
+Para renderizar los datos en pantalla habrá que acudir al repositorio Inprocode Front y seguir las instrucciones allí indicadas.
