@@ -1,4 +1,4 @@
-# Mi Aplicación Backend
+# Inprocode Backend
 
 Esta aplicación es un backend desarrollado en Node.js con Express, diseñado para interactuar con varias tablas de datos creadas con phpMyAdmin. Proporciona una serie de funcionalidades para manipular y visualizar los datos de manera eficiente y efectiva.
 
@@ -29,5 +29,4 @@ db: Esta carpeta contiene la configuración de la base de datos.
 🎉 Conclusión
 Esta aplicación backend es una herramienta poderosa para manipular y visualizar datos de varias tablas creadas con phpMyAdmin. Con su amplia gama de funcionalidades, es una excelente opción para cualquier proyecto que requiera una gestión de datos eficiente y efectiva.
 
-📝 Licencia
 
