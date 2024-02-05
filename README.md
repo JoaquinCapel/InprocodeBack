@@ -14,19 +14,20 @@ Esta aplicación es un backend desarrollado en Node.js con Express, diseñado pa
 Para ejecutar la aplicación, necesitarás tener instalado Node.js y Nodemon en tu sistema. Una vez instalados, puedes iniciar la aplicación utilizando el siguiente comando:
 
 ```bash
-nodemon dist/index.js
+npm start
 
-Para compilar los archivos TypeScript en tiempo real, puedes usar el siguiente comando:
-
-tsc --watch
-
-📁 Estructura del código
-El código se organiza en varias partes:
+📁 ESTRUCTURA DEL CÓDIGO
 
 server.ts: Este es el archivo principal que inicia el servidor y configura todas las rutas y middlewares.
+
 routes: Esta carpeta contiene todas las rutas de la aplicación, organizadas por funcionalidad (producto, calendario, mapa, gráficos).
+
 db: Esta carpeta contiene la configuración de la base de datos.
+
+validations: Contiene las validaciones correspondientes a los datos introducidos por el usuario.
+
 🎉 Conclusión
+
 Esta aplicación backend es una herramienta poderosa para manipular y visualizar datos de varias tablas creadas con phpMyAdmin. Con su amplia gama de funcionalidades, es una excelente opción para cualquier proyecto que requiera una gestión de datos eficiente y efectiva.
 
 ```
