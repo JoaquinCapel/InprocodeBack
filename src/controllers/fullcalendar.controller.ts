@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
+import { validationResult } from 'express-validator';
 import FullCalendar from "../models/fullcalendar";
-
+import { fullCalendarValidator } from '../validations/fullcalendar.validations'; 
 
 export const getListDates = async (req: Request, res: Response) => {
     const listDates = await FullCalendar.findAll();
@@ -37,21 +38,30 @@ export const deleteDate = async (req: Request, res: Response) => {
     }
 }
 
-export const postDate = async (req: Request, res: Response) => {
-    const { body } = req;
+export const postDate = [
+    ...fullCalendarValidator,
 
-    try {
-        await FullCalendar.create(body);
+    async (req: Request, res: Response) => {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() });
+        }
 
-        res.json({
-            msg: 'Evento añadido con éxito!',
-        });
+        const { body } = req;
 
-    } catch (error) {
-        console.log(error);
-        res.json({
-            msg: 'Error al añadir el Evento'
-        });
+        try {
+            await FullCalendar.create(body);
+
+            res.json({
+                msg: 'Evento añadido con éxito!',
+            });
+
+        } catch (error) {
+            console.log(error);
+            res.json({
+                msg: 'Error al añadir el Evento'
+            });
+        }
     }
-}
+];
 
