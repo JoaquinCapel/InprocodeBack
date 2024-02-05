@@ -15,7 +15,7 @@ Para ejecutar la aplicación, necesitarás tener instalado Node.js y Nodemon en 
 
 ```bash
 npm start
-
+```
 📁 ESTRUCTURA DEL CÓDIGO
 
 server.ts: Este es el archivo principal que inicia el servidor y configura todas las rutas y middlewares.
@@ -30,5 +30,4 @@ validations: Contiene las validaciones correspondientes a los datos introducidos
 
 Esta aplicación backend es una herramienta poderosa para manipular y visualizar datos de varias tablas creadas con phpMyAdmin. Con su amplia gama de funcionalidades, es una excelente opción para cualquier proyecto que requiera una gestión de datos eficiente y efectiva.
 
-```
 Para renderizar los datos en pantalla habrá que acudir al repositorio Inprocode Front y seguir las instrucciones allí indicadas.
